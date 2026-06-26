@@ -84,7 +84,7 @@
       <div class="about-text reveal-el">
         <div class="section-title" style="transition-delay:0.05s">The story, unfiltered.</div>
         <p>
-          It didn’t start with tutorials it started with a real problem. During my college capstone, I built a <strong>General Services Information Management System</strong> where students and staff could book services like motorpool vehicles, request repairs, and schedule preventive maintenance. That was the moment I realized <em>"this is what tech is supposed to do make things easier."</em>
+          It didn’t start with tutGeneral Services Information Management Systeorials it started with a real problem. During my college capstone, I built a <strong>m</strong> where students and staff could book services like motorpool vehicles, request repairs, and schedule preventive maintenance. That was the moment I realized <em>"this is what tech is supposed to do make things easier."</em>
         </p>
 
         <p>
@@ -257,13 +257,36 @@
             <span class="ptag ptag-yellow">Javascript</span>
             <span class="ptag ptag-yellow">PHP</span>
             <span class="ptag ptag-green">MySQL</span>
-            <span class="ptag ptag-purple">System</span>
+            <span class="ptag ptag-purple">Scheduling System</span>
           </div>
           <div class="project-name">General Services Info System</div>
           <div class="project-desc">Built a full scheduling system for a school — motor pool booking, repair & installation requests, and preventive maintenance tracking. My oldest and proudest project.</div>
           <button class="project-expand-btn">Full story →</button>
         </div>
       </div>
+
+      <div class="project-card reveal-el" style="transition-delay:0.5s" onclick="openModal('modal5')">
+        <div class="project-preview proj-5">📊</div>
+        <div class="project-body">
+            <div class="project-tag-row">
+              <span class="ptag ptag-green">Python</span>
+              <span class="ptag ptag-yellow">Pandas</span>
+              <span class="ptag ptag-yellow">Excel</span>
+              <span class="ptag ptag-pink">Data Analysis</span>            
+            </div>
+            <div class="project-name">
+                Customer Data Analytics Pipeline
+            </div>
+            <div class="project-desc">
+                Reads customer data from Excel, cleans and standardizes records, then automatically generates summary reports and an interactive dashboard for faster analysis.
+            </div>
+            <button class="project-expand-btn">
+                Full story →
+            </button>
+        </div>
+
+    </div>
+
     </div>
   </div>
 </section>
@@ -608,6 +631,112 @@
       <span class="ptag ptag-green">HTML / CSS</span>
       <span class="ptag ptag-purple">JavaScript</span>
     </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal5" onclick="closeModalOnOverlay(event, 'modal5')">
+  <div class="modal">
+
+    <button class="modal-close" onclick="closeModal('modal5')">✕</button>
+
+    <div class="modal-tag-row">
+      <span class="ptag ptag-green">Python</span>
+      <span class="ptag ptag-purple">Pandas</span>
+      <span class="ptag ptag-yellow">Automation</span>
+      <span class="ptag ptag-pink">Data Processing</span>
+    </div>
+
+    <div class="modal-title">
+      Customer Data Analytics Pipeline
+    </div>
+
+    <div class="modal-section-label">
+      The Problem
+    </div>
+
+    <p>
+      Customer information is often stored in Excel spreadsheets that contain
+      inconsistent formatting, duplicate records, and incomplete data.
+      Preparing these files manually for analysis can be repetitive,
+      time-consuming, and prone to errors.
+    </p>
+
+    <div class="modal-section-label">
+      The Solution
+    </div>
+
+    <p>
+      I developed a Python automation using <strong>Pandas</strong> that reads
+      customer data from Excel, cleans and standardizes records, processes the
+      dataset, and automatically generates summary reports together with a
+      dashboard for quick data analysis.
+    </p>
+
+    <div class="modal-section-label">
+      Workflow
+    </div>
+
+    <p style="font-family:var(--font-mono); line-height:2;">
+      📄 Excel File<br>
+      ↓<br>
+      📥 Read Data with Pandas<br>
+      ↓<br>
+      🧹 Clean & Standardize Records<br>
+      ↓<br>
+      📊 Generate Summary Report<br>
+      ↓<br>
+      📈 Build Dashboard
+    </p>
+
+    <div class="modal-section-label">
+      Key Features
+    </div>
+
+    <ul style="color:var(--muted); line-height:1.9; padding-left:18px;">
+      <li>Read customer datasets directly from Excel files</li>
+      <li>Clean and standardize customer records</li>
+      <li>Prepare datasets for analysis</li>
+      <li>Generate automated summary reports</li>
+      <li>Create a dashboard for quick business insights</li>
+    </ul>
+
+    <!-- DEMO -->
+  <div class="modal-section-label">
+    Demo
+  </div>
+
+  <div class="modal-links">
+      <a href="https://drive.google.com/file/d/1Kj972gxghIntNu4aQF-XFMANPvFdf0UU/view?usp=sharing" target="_blank">
+          📹 Watch Automation Demo ↗
+      </a>
+  </div>
+
+  <p style="font-size:0.75rem; color:var(--muted); margin-top:6px;">
+      Demonstration of the complete automation workflow. The narration is in Filipino, but the development process and results are shown step by step.
+  </p>
+
+    <div class="modal-section-label">
+      Why It Matters
+    </div>
+
+    <p>
+      Instead of manually cleaning spreadsheets and creating reports, the
+      automation produces clean datasets, summary reports, and dashboards in a
+      repeatable workflow, making data analysis faster and more consistent.
+    </p>
+
+    <div class="modal-section-label">
+      Tools Used
+    </div>
+
+    <div class="modal-tools">
+      <span class="ptag ptag-green">Python</span>
+      <span class="ptag ptag-purple">Pandas</span>
+      <span class="ptag ptag-yellow">Excel</span>
+      <span class="ptag ptag-pink">Data Analysis</span>
+      <span class="ptag ptag-green">Automation</span>
+    </div>
+
   </div>
 </div>
 
