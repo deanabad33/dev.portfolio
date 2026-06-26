@@ -588,6 +588,7 @@
   .proj-2 { background: linear-gradient(135deg, #1a1040, #2d1b6e); }
   .proj-3 { background: linear-gradient(135deg, #2a1040, #5c1d6b); }
   .proj-4 { background: linear-gradient(135deg, #2a1f00, #5c4500); }
+  .proj-5 {background: linear-gradient(135deg,#10374a,#1b6b80);}
 
   .project-body { padding: 1.4rem; }
 
@@ -663,15 +664,34 @@
   }
 
   .modal {
-    background: var(--bg3);
+    background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     max-width: 540px;
-    width: 100%;
+    width: min(800px, 92%);
+    max-height: 90vh;
+    overflow-y: auto;
     padding: 2rem;
     position: relative;
     transform: scale(0.95) translateY(10px);
     transition: transform 0.3s;
+  }
+
+  .modal::-webkit-scrollbar {
+    width: 8px;
+ }
+
+  .modal::-webkit-scrollbar-track {
+      background: transparent;
+  }
+
+  .modal::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,.18);
+      border-radius: 10px;
+  }
+
+  .modal::-webkit-scrollbar-thumb:hover {
+      background: rgba(255,255,255,.35);
   }
 
   .modal-links {
